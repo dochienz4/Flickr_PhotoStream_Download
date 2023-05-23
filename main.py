@@ -23,12 +23,9 @@ def download_file(url:str, saveFolder:str):
 # this function run well, don't touch it anymore :)
 # Adabra Kedavra, I wish i only need to write this once...
 def getLink(siteURL:str):
-    try:
-        siteCode = requests.get(siteURL).content.decode("utf-8")
-        filt = 'https:' + siteCode.split(',"key":"o","src":"')[1].split('"}}')[0].replace('\\', '')
-        return filt.split('_o')[0] + '_o_d' + filt.split('_o')[1]
-    except:
-        print ('this incantation not working :)')
+    siteCode = requests.get(siteURL).content.decode("utf-8")
+    filt = 'https:' + siteCode.split(',"key":"o","src":"')[1].split('"}}')[0].replace('\\', '')
+    return filt.split('_o')[0] + '_o_d' + filt.split('_o')[1]
 
 #  this fuction is used to scroll the wheel into the bottom, flickr using lazyload so it make sure that everything is loaded
 # same credit with getRectVertical funcion :)

@@ -11,3 +11,14 @@ In main.py, change the values to yours
 # remember to change the value for yourself :V
 ```
 after changed values, run it by your computer :)
+
+# Bug
+some cases of wrong response because flickr obfucate the html code so it can't get the normal path with href, there will be times when python will give an error and stop, please find the getlink function at the bottom of the main function, uncomment the if statement and change the value accordingly to continue unfinished files.
+
+```python
+for link in photoLink:
+    if photoLink.index(link) < 73:
+        continue
+    print(f'Downloading {photoLink.index(link)}/{len(photoLink)}')
+    download_file(getLink(link), pathFolder)
+```

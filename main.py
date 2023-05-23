@@ -42,14 +42,11 @@ def scrollAction(rect, counter = 5):
 # the fuction which everybody should know about :V im joke :)
 def main():
     # path folder, the folder you manna store all the images, don't let your girl see it :V 
-    # pathFolder = 'PATH/TO/YOUR/FOLDER/'
-    pathFolder = '/home/zanisdo/Pictures/SusuRim/Flikr_Auto'
+    pathFolder = 'PATH/TO/YOUR/FOLDER/'
 
     # the link to the photo stream on Flickr, one more time, don't let her see it :V
-
-    # photoStreamLink = 'PATH/TO/YOUR/LINK/'
-    photoStreamLink = 'https://www.flickr.com/photos/161070757@N06'
-    # photoStreamLink = 'https://www.flickr.com/photos/161070757@N06/page2'
+    photoStreamLink = 'PATH/TO/YOUR/LINK/'
+    
     # remember to change the value for yourself :V
     photoLink = []
 
